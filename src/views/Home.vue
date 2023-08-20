@@ -5,7 +5,6 @@
 
 <script>
 import p5 from 'p5';
-const fontPath = require("@/assets/BASKVILL.TTF");
 
 export default {
   name: 'MyProfile',
@@ -17,24 +16,13 @@ export default {
   },
   methods: {
     createSketch(p){
-      let customFont; 
-
-      p.preload = () => {
-        customFont = p.loadFont(fontPath);
-      };
 
       p.setup = () => {
         p.createCanvas(window.innerWidth, window.innerHeight, p.WEBGL);
-        p.textFont(customFont);
       }
 
       p.draw = () => {
         p.background(20);
-
-        p.fill(255); 
-        p.textSize(30); 
-        p.textAlign(p.CENTER, p.CENTER); 
-        p.text("Nao Kokubo", 0, 0); 
       }
     }
   }
