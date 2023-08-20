@@ -1,16 +1,16 @@
 <template>
-    <div refs="canvas" class="home">a
+    <div refs="canvas" class="home">
     </div>
 </template>
 
 <script>
+import p5 from 'p5';
+
 export default {
   name: 'MyProfile',
-  data() {
-    return {
-      name: 'Nao Kokubo',
-    };
-  }
+  mounted() {
+    this.sketch = new p5(this.createSketch, this.$refs.canvas);
+  },
 }
 </script>
 
