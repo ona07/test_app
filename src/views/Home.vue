@@ -5,7 +5,7 @@
 
 <script>
 import p5 from 'p5';
-const fontPath = require("../assets/JKG-M_3.ttf");
+const fontPath = require("../assets/name.otf");
 
 export default {
 name: 'MyProfile',
