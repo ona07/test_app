@@ -5,6 +5,7 @@
 
 <script>
 import p5 from 'p5';
+const fontPath = require("@/assets/BASKVILL.TTF");
 
 export default {
 name: 'MyProfile',
@@ -17,6 +18,11 @@ beforeUnmount() {
 methods: {
   createSketch(p) {
     let vertices;
+    let customFont;
+
+    p.preload = () => {
+        customFont = p.loadFont(fontPath);
+      };
 
     p.setup = () => {
       p.createCanvas(window.innerWidth, window.innerHeight, p.WEBGL);
@@ -29,6 +35,8 @@ methods: {
       vertices[2] = p.createVector(50, 50, 50);  // 鼻先
       vertices[3] = p.createVector(-50, -50, -50); // 顎
       vertices[4] = p.createVector(50, -50, -50);  // 顎
+
+      p.textFont(customFont);
     };
 
     p.draw = () => {
@@ -52,6 +60,11 @@ methods: {
       }
 
       p.endShape();
+
+      p.fill(255); // テキストの色を白に設定
+      p.textSize(30); // テキストのサイズを設定
+      p.textAlign(p.CENTER, p.CENTER); // テキストの配置を中央に設定
+      p.text("Nao Kokubo", 0, 0); // テキストを描画
     };
   },
 },
