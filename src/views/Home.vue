@@ -5,7 +5,6 @@
 
 <script>
 import p5 from 'p5';
-const fontPath = require("../assets/name.otf");
 
 export default {
 name: 'MyProfile',
@@ -21,7 +20,8 @@ methods: {
     let customFont;
 
     p.preload = () => {
-        customFont = p.loadFont(fontPath);
+      const url = "https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.otf";  
+      customFont = p.loadFont(url);
       };
 
     p.setup = () => {
