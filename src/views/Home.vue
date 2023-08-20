@@ -5,7 +5,7 @@
 
 <script>
 import p5 from 'p5';
-const fontPath = require("@/assets/BASKVILL.TTF");
+const fontPath = require("../assets/BASKVILL.TTF");
 
 export default {
 name: 'MyProfile',
@@ -51,9 +51,8 @@ methods: {
       vertices[1] = p.createVector(0, p.mouseY-window.innerHeight/2, 0);
       vertices[3] = p.createVector(0, p.mouseY-window.innerHeight/2, 0);
 
-      p.beginShape(p.TRIANGLE_STRIP); // 三角形ストリップを開始
+      p.beginShape(p.TRIANGLE_STRIP); 
 
-      // 頂点座標を指定して顔の形状を描画
       for (let i = 0; i < vertices.length; i++) {
         const v = vertices[i];
         p.vertex(v.x, v.y, v.z);
@@ -61,10 +60,10 @@ methods: {
 
       p.endShape();
 
-      p.fill(255); // テキストの色を白に設定
-      p.textSize(30); // テキストのサイズを設定
-      p.textAlign(p.CENTER, p.CENTER); // テキストの配置を中央に設定
-      p.text("Nao Kokubo", 0, 0); // テキストを描画
+      p.fill(255); 
+      p.textSize(30); 
+      p.textAlign(p.CENTER, p.CENTER); 
+      p.text("Nao Kokubo", 0, 0); 
     };
   },
 },
