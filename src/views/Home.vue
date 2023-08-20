@@ -5,7 +5,7 @@
 
 <script>
 import p5 from 'p5';
-const fontPath = require("@/assets/nameFont.ttf");
+const fontPath = require("../assets/nameFont.ttf");
 
 export default {
   name: 'MyProfile',
