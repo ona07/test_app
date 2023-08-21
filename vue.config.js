@@ -4,6 +4,6 @@ module.exports = defineConfig({
 })
 
 module.exports = {
-    publicPath: './',
+    publicPath: process.env.NODE_ENV === 'production' ? '/my-portfolio/' : '/',
     outputDir: 'docs'
 }
