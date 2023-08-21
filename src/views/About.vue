@@ -3,7 +3,7 @@
     <div class="about">
       <h1 class="title">ABOUT</h1>
       <div class="contents">
-        <div class="me">
+        <div class="me" >
           <h2>ME</h2>
           <div class="list">
             <p v-for="(me, index) in me" :key="index">
@@ -68,7 +68,7 @@ export default {
         { frame: 'いさりびwith', team: '商品開発チーム', position: 'subleader&web developer' },
       ],
     };
-  }
+  },
 };
 </script>
 
@@ -78,6 +78,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: auto;
 }
 .about{
   width: 50vw;
