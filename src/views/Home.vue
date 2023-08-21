@@ -40,7 +40,7 @@ methods: {
     };
 
     p.draw = () => {
-      p.background(20);
+      p.background(0);
       p.lights();
 
       const rotation = p.map(p.mouseX, 0, p.width, -p.PI, p.PI);
