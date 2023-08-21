@@ -20,7 +20,7 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: rgb(15, 15, 15);
   display: flex;
   overflow: hidden;
 }
