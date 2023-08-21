@@ -38,6 +38,9 @@
             </a>
           </div>
         </div>
+        <div class="others">
+          <h2>OTHERS</h2>
+        </div>
       </div>
     </div>
   </div>
@@ -65,7 +68,7 @@ export default {
       ],
       projects: [
         { frame: '高度ICT演習', team: 'fun-i-con', position: 'backend' ,link:'https://www.fun.ac.jp/advanced-ict'},
-        { frame: 'いさりびwith', team: '商品開発チーム', position: 'subleader&web developer' },
+        { frame: 'いさりびwith', team: '商品開発チーム', position: 'subleader & web developer' },
       ],
     };
   },
@@ -100,7 +103,7 @@ h2{
   font-weight: lighter;
 }
 .skill-subtitle{
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 .skill-list{
   display: flex;
@@ -109,8 +112,9 @@ h2{
 .skill{
   width: fit-content;
   border: 1px solid white;
-  padding: 4px 10px 4px 10px;
-  margin-right: 8px;
+  padding: 5px 10px 5px 10px;
+  margin: 6px 6px 6px 0px;
+  font-size: 12px;
 }
 .project-container{
   width: 100%;
