@@ -71,5 +71,4 @@ methods: {
 </script>
 
 <style>
-
 </style>

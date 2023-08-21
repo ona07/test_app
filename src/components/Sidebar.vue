@@ -2,7 +2,6 @@
     <aside class="sidebar">
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
-      <router-link to="/projects">Projects</router-link>
     </aside>
   </template>
   
@@ -14,10 +13,11 @@
   
   <style scoped>
   .sidebar {
-    width: 4%;
+    width: fit-content;
     height: 100%;
     text-align: center;
     padding: 20px;
+    background-color: darkgrey;
   }
   
   .sidebar a {
