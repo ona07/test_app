@@ -38,6 +38,17 @@
             </a>
           </div>
         </div>
+        <div class="interns">
+          <h2>INTERNS</h2>
+          <div class="intern-container">
+            <a v-for="(intern, index) in interns" :key="index" class="project-box">
+              <a class="project-position" :href="intern.companyLink" target="_blank">{{ intern.company }}</a>
+              <a class="project-position"> ({{ intern.period }})</a>
+              <br>
+              <a class="project-name" :href="intern.article" target="_blank">{{ intern.name }}</a>
+            </a>
+          </div>
+        </div>
         <div class="others">
           <h2>OTHERS</h2>
         </div>
@@ -69,6 +80,10 @@ export default {
       projects: [
         { frame: '高度ICT演習', team: 'fun-i-con', position: 'backend' ,link:'https://www.fun.ac.jp/advanced-ict'},
         { frame: 'いさりびwith', team: '商品開発チーム', position: 'subleader & web developer' },
+      ],
+      interns: [
+        { company: 'CosstyHD (株)ECOTEC', name: '建設会社でDXインターンシップ', period: '2023/03/13~2023/03/16' ,
+        companyLink:'https://www.ecotec.ne.jp/',article:'https://note.com/crosstyhd_dx/n/n304c759e42e8'},
       ],
     };
   },

@@ -8,12 +8,6 @@ import p5 from 'p5';
 
 export default {
 name: 'MyProfile',
-mounted() {
-  this.sketch = new p5(this.createSketch, this.$refs.canvas);
-},
-beforeUnmount() {
-  this.sketch.remove();
-},
 methods: {
   createSketch(p) {
     let vertices;
@@ -66,6 +60,12 @@ methods: {
       p.text("Nao Kokubo", 0, 0); 
     };
   },
+},
+mounted() {
+  this.sketch = new p5(this.createSketch, this.$refs.canvas);
+},
+beforeUnmounted() {
+  this.sketch.remove();
 },
 };
 </script>

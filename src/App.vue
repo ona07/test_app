@@ -22,11 +22,13 @@ body {
   padding: 0;
   background-color: rgb(15, 15, 15);
   display: flex;
+  width: 100vw; 
+  height: 100vh; 
   overflow: hidden;
 }
 .app {
   display: flex;
+  width: fit-content;
   height: 100vh;
 }
-
 </style>
